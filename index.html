@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Liberdade em Palavras</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto&display=swap"
+    rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+  <header>
+    <h1 class="typewriter">Liberdade em Palavras</h1>
+    <p class="subtypewriter">Vozes que desafiaram o silêncio</p>
+    <div class="info">
+      <span>Vitória, ES</span>
+      <span>Segunda-feira, 5 de Maio de 2025</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#ditadura">Ditadura</a></li>
+        <li><a href="#linha-tempo">Linha do Tempo</a></li>
+        <li><a href="#atual">Liberdade Atual</a></li>
+        <li><a href="#autoras">Autoras</a></li>
+        <li><a href="#quiz">Jogo Rápido</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article id="ditadura">
+      <h2>A Voz Silenciada: Imprensa na Ditadura Militar</h2>
+      <p class="highlight">“Escrever era um ato de coragem.”</p>
+      <p>Durante os anos de repressão no Brasil (1964-1985), jornalistas enfrentaram censura severa. Manchetes eram
+        trocadas por receitas ou poemas, e redações viviam sob constante vigilância.</p>
+      <figure class="img-box">
+        <img src="imagens/unnamed_377450.jpg" alt="Jornal censurado" />
+        <figcaption>Jornal censurado durante o regime militar brasileiro.</figcaption>
+      </figure>
+
+      <section class="artistas">
+        <h3>Artistas que não se calaram</h3>
+        <div class="artista" onclick="mostrarBiografia('elis')">
+          <img src="imagens/Elis-regina_1.webp" alt="Elis Regina">
+          <p><strong>Elis Regina:</strong> “Eu não sou artista para agradar, eu sou artista para cantar. E para cantar a
+            verdade.”</p>
+          <div id="biografia-elis" class="biografia hidden">
+            <p>Elis Regina foi uma das mais importantes cantoras brasileiras. Sua voz poderosa e seu estilo de interpretação
+              marcaram a história da música popular brasileira.</p>
+            </div></div>
+        <div class="artista">
+          <img src="imagens/frases-de-rita-lee-1024x576.webp" alt="Rita Lee">
+          <p><strong>Rita Lee:</strong> “Censura não cala quem canta com alma.”</p>
+        </div>
+        <div class="artista">
+          <img src="imagens/20240920_chico-buarque-violao.jpg" alt="Chico Buarque">
+          <p><strong>Chico Buarque:</strong> “Apesar de você, amanhã há de ser outro dia.”</p>
+        </div>
+      </section>
+    </article>
+
+
+    <section id="linha-tempo">
+      <h2>Linha do Tempo da Censura</h2>
+      <div class="timeline">
+        <button data-ano="1964">1964</button>
+        <button data-ano="1968">1968</button>
+        <button data-ano="1985">1985</button>
+        <button data-ano="1988">1988</button>
+        <button data-ano="2024">2024</button>
+      </div>
+      <div id="evento"></div>
+    </section>
+
+<br>
+<br>
+
+  <article id="atual">
+      <h2>Liberdade Conquistada e Desafiada</h2>
+      <blockquote class="typewriter-quote">“Sem imprensa livre, não há democracia.”</blockquote>
+      <blockquote class="typewriter-quote">“A verdade não teme o olhar.”</blockquote>
+      <blockquote class="typewriter-quote">“Silenciar é escolher um lado.”</blockquote>
+    </article>
+    <br>
+    <br>
+    
+
+    <article id="autoras">
+      <h2>Vozes Escondidas: Mulheres e Pseudônimos</h2>
+      <p class="highlight">“Se eu fosse homem, teria publicado mais cedo.”</p>
+      <ul class="lista-autoras">
+        <li><strong>George Eliot</strong> – crítica social na era vitoriana</li>
+        <li><strong>Currer, Ellis e Acton Bell</strong> – nomes das irmãs Brontë</li>
+        <li><strong>Nísia Floresta</strong> – precursora do feminismo no Brasil</li>
+      </ul>
+      <p>Escreviam para resistir, para existir, e abriram caminho para gerações futuras de escritoras.</p>
+      <br>
+    
+      <h3>Mulheres e Seus Pseudônimos: Resistência e Identidade</h3>
+      
+      <!-- Div para a mulher Mary Ann Evans -->
+      <div class="pseudonimo">
+        <img src="imagens/maryann-1024x1024.webp" alt="Mary Ann Evans" class="foto-pseudonimo">
+        <div class="descricao">
+          <p><strong>Mary Ann Evans</strong> (George Eliot): “Middlemarch”</p>
+          <p>Mary Ann Evans, mais conhecida pelo pseudônimo de George Eliot, foi uma das grandes romancistas vitorianas. Seus
+            livros, como "Middlemarch", abordaram questões sociais e psicológicas com grande profundidade.</p>
+        </div>
+      </div>
+      
+      <!-- Div para Currer, Ellis e Acton Bell -->
+      <div class="pseudonimo">
+        <img src="imagens/The_Brontë_Sisters_by_Patrick_Branwell_Brontë_restored.jpg" alt="Currer, Ellis e Acton Bell" class="foto-pseudonimo">
+        <div class="descricao">
+          <p><strong>Currer, Ellis e Acton Bell</strong> (Irmãs Brontë): “Jane Eyre”</p>
+          <p>As irmãs Brontë usaram pseudônimos masculinos para publicar suas obras. "Jane Eyre" de Charlotte, sob o nome de
+            Currer Bell, é um dos maiores clássicos da literatura inglesa.</p>
+        </div>
+      </div>
+      
+      <!-- Div para Nísia Floresta -->
+      <div class="pseudonimo">
+        <img src="imagens/Nizia_Floresta_Augusta_(Mulheres_illustres_do_Brazil).jpg" alt="Nísia Floresta" class="foto-pseudonimo">
+        <div class="descricao">
+          <p><strong>Nísia Floresta</strong>: “Direitos das Mulheres”</p>
+          <p>Nísia Floresta foi uma das pioneiras do feminismo no Brasil, lutando pela educação das mulheres e por seus
+            direitos. Seu trabalho "Direitos das Mulheres" ajudou a abrir portas para as escritoras e ativistas no país.</p>
+        </div>
+        </div>
+    </article>
+
+
+
+    <section id="quiz">
+      <h2>Jogo Rápido: Verdadeiro ou Falso?</h2>
+      <div id="quiz-container">
+        <p id="pergunta"></p>
+        <div id="respostas">
+          <button id="verdadeiro">Verdadeiro</button>
+          <button id="falso">Falso</button>
+        </div>
+        <div id="placar" class="hidden"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Liberdade em Palavras — Produzido por Júlia Cardoso
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
